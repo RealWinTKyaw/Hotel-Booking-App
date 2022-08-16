@@ -1,0 +1,108 @@
+.search{
+    background-color: #282c34;
+    min-height: 100vh;
+
+
+}
+.searchInputs{
+    /* position: relative;
+    top: -200px;
+    left: -500px; */
+    margin-left: 10px;
+    display:flex;
+    width: 380px;
+}
+
+.search input{
+    background-color: white;
+    border:0px;
+    font-size: 18px;
+    padding: 15px;
+    height: 30px;
+    width: 300px;
+    margin-top: 10px;
+}
+
+.searchIcon{
+    border: 3px solid #ccc;
+    margin-top: 10px;
+    height: 55.5px;
+    width: 50px;
+    background-color:white;
+    color: black;
+    display:grid;
+    place-items:center;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+.searchIcon svg{      /* need this to control icon size, idk why*/
+    font-size: 35px;
+}
+.searchIcon:hover{
+    border: 3px solid blue;
+}
+
+.dataResult{
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 330px;
+    height: 200px;
+    background-color: white;
+    box-shadow: rgba(0,0, 0, 0.35) 5px 5px 15px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.dataResult::-webkit-scrollbar{  /*enable this is you want to remove scrollbar*/
+    display:none;
+}
+
+
+.dataResult .dataItem{
+    width: 320px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+
+.dataItem p{
+    margin-left: 10px;
+}
+
+title:hover{
+    background-color: lightgray;
+}
+
+#clearBtn{
+    cursor:pointer;   /* Change cursor when hovering over the closeIcon*/
+}
+
+#searchBtn{
+    cursor:pointer;   /* Change cursor when hovering over the searchIcon*/
+}
+
+.datePickerText{
+    display: table-row;
+    padding: 5px;
+    color: white;
+    margin-top: 25px;
+}
+.buttons{
+    padding: 100px;
+    display: inline-flex;
+}
+.counter{
+    margin-left: auto;
+    display:contents;
+    height: 50px;
+    width: 50px;
+    color: white;
+    font-size: 100px;
+}
+.buttons h2{
+    color:white;
+}
